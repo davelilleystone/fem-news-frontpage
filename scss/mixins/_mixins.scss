@@ -1,0 +1,13 @@
+// create media query, uses $breakpoints map as lookup for screen width.
+
+@mixin breakpoint($bp) {
+  @if (map-has-key($breakpoints, $bp)) {
+    $width: map-get($breakpoints, $bp);
+
+    @media screen and (min-width: $width) {
+      @content;
+    }
+  } @else {
+    @error "Breakpoint value #{$bp} is not valid";
+  }
+}
