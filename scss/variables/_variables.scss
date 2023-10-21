@@ -1,3 +1,17 @@
+// default font size
+
+$baseFontSize: 16px;
+
+// colours
+$almost-white: #fffdfa;
+$dark-space-blue: #00001a;
+
+// nav slide in
+
+$slideInBg: $almost-white;
+$slideInFontColor: $dark-space-blue;
+$slideInFontSize: calc(18px / $baseFontSize * 1rem);
+
 // breakpoints for media queries
 
 $breakpoints: (
@@ -8,3 +22,7 @@ $breakpoints: (
   xl: 1200px,
   xxl: 1400px,
 );
+
+// max width for the entire app
+
+$max-width: 1400px;

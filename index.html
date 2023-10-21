@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Homepage</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <div class="content-wrapper">
       <header>
-        <img src="./assets/images/logo.svg" alt="site logo" />
-        <nav>
-          <ul>
+        <img src="./assets/images/logo.svg" alt="site logo" class="site-logo" />
+        <img src="./assets/images/icon-menu.svg" alt="open menu" class="menu-hamburger" />
+
+        <nav class="nav-wrapper">
+          <img src="./assets/images/icon-menu-close.svg" alt="close menu" class="menu-close" />
+          <ul class="nav-items-wrapper">
             <li><a href="#">Home</a></li>
             <li><a href="#">New</a></li>
             <li><a href="#">Popular</a></li>
@@ -19,6 +23,13 @@
           </ul>
         </nav>
       </header>
+      <main>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque sapiente, voluptatum totam vitae cumque ad
+          reiciendis aliquam soluta inventore deserunt quos doloremque, non consectetur repellendus eos expedita
+          corrupti quis repudiandae.
+        </p>
+      </main>
 
       <!-- 
   The Bright Future of Web 3.0?
@@ -51,5 +62,17 @@
   The Growth of Gaming
   How the pandemic has sparked fresh opportunities. -->
     </div>
+    <script>
+      const menuHamburger = document.querySelector(".menu-hamburger");
+      const menuClose = document.querySelector(".menu-close");
+
+      menuHamburger.addEventListener("click", () => {
+        document.querySelector(".nav-wrapper").classList.add("show");
+      });
+
+      menuClose.addEventListener("click", () => {
+        document.querySelector(".nav-wrapper").classList.remove("show");
+      });
+    </script>
   </body>
 </html>

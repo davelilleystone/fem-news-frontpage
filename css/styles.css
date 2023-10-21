@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Inter-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Inter-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/static/Inter-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-wrapper {
+  position: relative;
+  padding: 1.75rem 1rem 5rem;
+  margin: 3rem auto 3rem;
+  border: 1px solid #ccc;
+  width: 375px;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-wrapper {
+  position: absolute;
+  overflow: hidden;
+  width: 16rem;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: #fffdfa;
+  transform: translateX(16rem);
+  transition: all 0.3s ease-in-out;
+}
+.nav-wrapper.show {
+  transform: translateX(0);
+}
+
+.nav-items-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 203px;
+  flex-shrink: 0;
+  margin-top: 9rem;
+  margin-left: 1.5rem;
+  font-size: 1.125rem;
+  color: #00001a;
+}
+.nav-items-wrapper a {
+  color: #00001a;
+}
+
+.site-logo {
+  width: 45px;
+}
+
+.menu-hamburger {
+  width: 40px;
+  height: 17px;
+}
+
+.menu-close {
+  position: absolute;
+  top: 1.75rem;
+  right: 1.3125rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
