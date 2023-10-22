@@ -24,6 +24,7 @@
 
 body {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
 }
 
 a {
@@ -37,17 +38,18 @@ a {
   border: 1px solid #ccc;
   width: 375px;
   overflow: hidden;
+  background-color: #fffdfa;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .nav-wrapper {
   position: absolute;
-  overflow: hidden;
   width: 16rem;
   right: 0;
   top: 0;
@@ -67,8 +69,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
-  width: 203px;
+  gap: 1.5rem;
+  width: 15.1875rem;
   flex-shrink: 0;
   margin-top: 9rem;
   margin-left: 1.5rem;
@@ -92,6 +94,87 @@ header {
   position: absolute;
   top: 1.75rem;
   right: 1.3125rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.headline-article {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.headline-article-image img {
+  width: 100%;
+}
+.headline-article-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 2.5rem;
+  color: #00001a;
+  margin: 1.5rem 0 1rem;
+}
+.headline-article-description {
+  color: var(--Gunmetal, #5e607a);
+  line-height: 26px;
+  margin-bottom: 1.5rem;
+}
+.headline-article-link {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2734375rem;
+  color: #fffdfa;
+  background-color: #f15d51;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 4rem;
+}
+
+.new-articles {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.25rem;
+  margin: 0 0 4rem 0;
+  background-color: #00001a;
+}
+.new-articles-title {
+  color: #e9aa52;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.1875rem;
+}
+.new-articles ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.new-articles li {
+  padding: 2rem 0;
+}
+.new-articles li:last-of-type {
+  padding-bottom: 0;
+}
+.new-articles li:first-of-type {
+  padding-top: 0;
+}
+.new-articles li:not(:last-child) {
+  border-bottom: 1px solid rgba(94, 96, 122, 0.75);
+}
+.new-articles h3 {
+  font-size: 1.25rem;
+  color: #fffdfa;
+}
+.new-articles p {
+  margin-top: 0.5rem;
+  color: #c5c6ce;
+  line-height: 1.625rem;
+}
+.new-articles li:last-of-type p {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

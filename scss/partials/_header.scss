@@ -2,16 +2,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .nav-wrapper {
   position: absolute;
-  overflow: hidden;
+
   width: pxToRem(256px);
   right: 0;
   top: 0;
   height: 100%;
-  background-color: $slideInBg;
+  background-color: $slideInBgColor;
   transform: translateX(pxToRem(256px));
   transition: all 0.3s ease-in-out;
 
@@ -25,12 +26,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
-  width: 203px;
+  gap: 1.5rem;
+  width: pxToRem(243px);
   flex-shrink: 0;
   margin-top: pxToRem(144px);
   margin-left: 1.5rem;
-  font-size: $slideInFontSize;
+  font-size: pxToRem(18px);
   color: $slideInFontColor;
 
   a {

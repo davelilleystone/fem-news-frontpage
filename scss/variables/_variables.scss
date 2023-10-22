@@ -3,15 +3,33 @@
 $baseFontSize: 16px;
 
 // colours
-$almost-white: #fffdfa;
-$dark-space-blue: #00001a;
+$color-almost-white: #fffdfa;
+$color-dark-space-blue: #00001a;
+$color-gunmetal: #5e607a;
+$color-light-vermillion: #f15d51;
+$color-yellow: #e9aa52;
+$color-silver: #c5c6ce;
+$color-dolphin: #5e607a;
+
+// base
+$backgroundColor: $color-almost-white;
 
 // nav slide in
+$slideInBgColor: $color-almost-white;
+$slideInFontColor: $color-dark-space-blue;
 
-$slideInBg: $almost-white;
-$slideInFontColor: $dark-space-blue;
-$slideInFontSize: calc(18px / $baseFontSize * 1rem);
+// headline article
+$headlineArticleDescriptionFontColor: $color-gunmetal;
+$headlineArticleTitleFontColor: $color-dark-space-blue;
+$headlineArticleLinkBgColor: $color-light-vermillion;
+$headlineArticleLinkFontColor: $color-almost-white;
 
+// new articles
+$newArticlesBgColor: $color-dark-space-blue;
+$newArticlesTitleColor: $color-yellow;
+$newArticleTitleFontColor: $color-almost-white;
+$newArticleFontColor: $color-silver;
+$newArticleBottomBorderColor: $color-dolphin;
 // breakpoints for media queries
 
 $breakpoints: (
