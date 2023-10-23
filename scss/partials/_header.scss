@@ -7,17 +7,24 @@ header {
 
 .nav-wrapper {
   position: absolute;
-
   width: pxToRem(256px);
   right: 0;
   top: 0;
   height: 100%;
   background-color: $slideInBgColor;
   transform: translateX(pxToRem(256px));
-  transition: all 0.3s ease-in-out;
+
+  @include breakpoint(md) {
+    position: relative;
+    width: auto;
+    height: auto;
+    transition: none;
+    transform: translateX(0);
+  }
 
   &.show {
     transform: translateX(0);
+    transition: all 0.3s ease-in-out;
   }
 }
 
@@ -28,7 +35,6 @@ header {
   align-items: flex-start;
   gap: 1.5rem;
   width: pxToRem(243px);
-  flex-shrink: 0;
   margin-top: pxToRem(144px);
   margin-left: 1.5rem;
   font-size: pxToRem(18px);
@@ -37,19 +43,44 @@ header {
   a {
     color: $slideInFontColor;
   }
+
+  @include breakpoint(md) {
+    position: relative;
+    flex-direction: row;
+    font-size: pxToRem(15px);
+    width: auto;
+    margin: 0;
+    gap: 2.5rem;
+
+    a:hover {
+      color: $color-light-vermillion;
+    }
+  }
 }
 
 .site-logo {
-  width: 45px;
+  width: pxToRem(45px);
+
+  @include breakpoint(md) {
+    width: pxToRem(65px);
+  }
 }
 
 .menu-hamburger {
   width: 40px;
   height: 17px;
+
+  @include breakpoint(md) {
+    display: none;
+  }
 }
 
 .menu-close {
   position: absolute;
   top: pxToRem(28px);
   right: pxToRem(21px);
+
+  @include breakpoint(md) {
+    display: none;
+  }
 }
